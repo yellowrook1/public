@@ -1,4 +1,4 @@
-on: pull_request
+on: [pull_request, pull_request_review, pull_request_review_comment]
 
 permissions: write-all
 
@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo The PR was merged
+        echo 'The PR was merged {{github.event}}'
