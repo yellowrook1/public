@@ -1,0 +1,7 @@
+name: Malicious Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Pwned!"
