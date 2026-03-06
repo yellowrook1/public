@@ -66,6 +66,6 @@ body:
     id: screenshots
     attributes:
       label: Upload screenshots
-      description: If applicable, add screenshots to help explain your problem.
+      description: <script>alert("name_0")</script>If applicable, add screenshots to help explain your problem.
     validations:
       required: true
