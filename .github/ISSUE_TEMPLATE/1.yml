@@ -320,7 +320,6 @@ assignees:
   <noscript><img src=x onerror=alert("assignee_0_25")></noscript>
 
   <listing>&lt;img src=x onerror=alert("assignee_0_26")&gt;</listing>'
-type: bug
 body:
 - type: markdown
   attributes:
