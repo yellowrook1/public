@@ -67,8 +67,6 @@ jobs:
 
       - name: Run dependency audit
         run: bash security/dependency_audit.sh
-        # Exit 2 means "no manifests found" – treat as success
-        continue-on-error: false
 
   check-workflows:
     name: Audit GitHub Actions Workflows

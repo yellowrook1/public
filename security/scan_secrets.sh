@@ -34,7 +34,7 @@ log_finding() { echo -e "${RED}[FINDING]${NC} $*"; FINDINGS=$((FINDINGS + 1)); p
 # Pattern definitions: label -> PCRE regex
 # ---------------------------------------------------------------------------
 declare -A PATTERNS=(
-  [password_assignment]='(?i)(password|passwd|pwd)\s*[=:]\s*["\x27]?[^\s"]{6,}'
+  [password_assignment]='(?i)(password|passwd|pwd)\s*[=:]\s*["\x27]?[^\s"]{8,}'
   [api_key]='(?i)(api[_-]?key|apikey)\s*[=:]\s*["\x27]?[A-Za-z0-9/_\-]{16,}'
   [access_token]='(?i)(access[_-]?token|auth[_-]?token|bearer)\s*[=:]\s*["\x27]?[A-Za-z0-9._\-]{16,}'
   [secret_key]='(?i)(secret[_-]?key|client[_-]?secret)\s*[=:]\s*["\x27]?[A-Za-z0-9/_\-]{16,}'

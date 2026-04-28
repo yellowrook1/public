@@ -124,7 +124,7 @@ scan MEDIUM "commented_cred"    '(?i)(#|//|/\*)\s*(password|passwd|api[_-]?key|s
 # Large base64 blobs (potential embedded secrets or binaries)
 # ---------------------------------------------------------------------------
 log_info "Scanning for suspicious large base64 blobs ..."
-scan LOW "large_base64"         '[A-Za-z0-9+/]{80,}={0,2}'
+scan LOW "large_base64"         '(?i)(secret|token|key|password)\s*[=:]\s*["\x27]?[A-Za-z0-9+/]{80,}={0,2}'
 
 # ---------------------------------------------------------------------------
 # Summary

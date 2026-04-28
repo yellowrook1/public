@@ -93,10 +93,10 @@ for check in "${CHECKS[@]}"; do
   separator
 
   exit_code=0
-  bash "$script" 2>&1 | tee /dev/null || exit_code=$?
-  # Re-run capturing output for report file
   if [ -n "$REPORT_FILE" ]; then
-    bash "$script" >> "$REPORT_FILE" 2>&1 || true
+    bash "$script" 2>&1 | tee -a "$REPORT_FILE" || exit_code=$?
+  else
+    bash "$script" 2>&1 || exit_code=$?
   fi
 
   if [ "$exit_code" -eq 0 ]; then

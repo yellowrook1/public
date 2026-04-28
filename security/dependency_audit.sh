@@ -104,7 +104,7 @@ while IFS= read -r gemfile_lock; do
   if command -v bundle &>/dev/null; then
     if (cd "$dir" && bundle exec bundler-audit version &>/dev/null 2>&1); then
       log_info "Running bundle audit in ${dir} ..."
-      if ! (cd "$dir" && bundle exec bundle-audit check --update 2>&1); then
+      if ! (cd "$dir" && bundle exec bundler-audit check --update 2>&1); then
         log_finding "bundle-audit reported vulnerabilities in ${dir}"
       fi
     fi

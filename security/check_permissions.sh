@@ -91,8 +91,8 @@ SENSITIVE_PATTERNS=(*.pem *.key *.p12 *.pfx *.cer *.crt id_rsa id_dsa id_ecdsa i
 for pattern in "${SENSITIVE_PATTERNS[@]}"; do
   while IFS= read -r f; do
     perms=$(stat -c '%a' "$f" 2>/dev/null || stat -f '%p' "$f" 2>/dev/null || echo "unknown")
-    # Warn if readable by group or others
-    if echo "$perms" | grep -qP '^[0-9]*(4[0-9]{2}|[0-9][4-7][0-9]|[0-9]{2}[4-7])$'; then
+    # Warn if readable by group (middle digit >= 4) or by others (last digit >= 4)
+    if echo "$perms" | grep -qP '^[0-7]?[0-7]([4-7])[0-7]$|^[0-7]?[0-7][0-7]([4-7])$'; then
       log_finding "Sensitive file is group/world-readable: $(stat_perm "$f")"
     fi
   done < <(find "$REPO_ROOT" "${GIT_EXCLUDE[@]}" -type f -name "$pattern" 2>/dev/null)
